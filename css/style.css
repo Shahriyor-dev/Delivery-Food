@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+body {
+  padding-top: 44px;
+  font-family: "Roboto", sans-serif;
+}
 .container {
   max-width: 1200px;
   margin: auto;
@@ -9,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 .search-input {
   background: #ffffff;
@@ -47,4 +52,22 @@
 }
 .button-icon {
   margin-right: 6px;
+}
+
+.promo {
+  filter: drop-shadow(0px 7px 12px rgba(158, 158, 163, 0.1));
+  background: #efdbff url(../img/promo-bg.png) no-repeat top -100px right -247px /
+    924px;
+  border-radius: 10px;
+  padding: 68px 70px;
+}
+.promo-text {
+  max-width: 500px;
+}
+.promo-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 39px;
+  line-height: 46px;
+  color: #302c34;
 }
