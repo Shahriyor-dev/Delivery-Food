@@ -15,6 +15,9 @@ body {
   justify-content: space-between;
   margin-bottom: 40px;
 }
+.tanuki-img {
+  max-width: 100%;
+}
 .input {
   background: #ffffff;
   border: 1px solid #d9d9d9;
@@ -33,6 +36,7 @@ body {
 .input-search {
   background-image: url(../img/search-icon.svg);
   width: 300px;
+  margin-left: auto;
 }
 .buttons {
   display: flex;
@@ -59,7 +63,9 @@ body {
 .button-icon {
   margin-right: 6px;
 }
-
+.button-card-text {
+  margin-right: 10px;
+}
 .promo {
   filter: drop-shadow(0px 7px 12px rgba(158, 158, 163, 0.1));
   background: #efdbff url(../img/promo-bg.png) no-repeat top -100px right -247px /
@@ -86,7 +92,6 @@ body {
 .section-heading {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 44px;
 }
 .section-title {
@@ -96,6 +101,7 @@ body {
   line-height: 42px;
   color: #000000;
   margin: 0;
+  margin-right: 30px;
 }
 .cards {
   display: flex;
@@ -110,6 +116,7 @@ body {
   overflow: hidden;
   margin-bottom: 30px;
   flex-basis: 31%;
+  text-decoration: none;
 }
 .card-img {
   width: 384px;
@@ -133,6 +140,9 @@ body {
   line-height: 32px;
   color: #000000;
 }
+.card-title--reg {
+  font-weight: 400;
+}
 .card-tag {
   background: #262626;
   border-radius: 2px;
@@ -147,6 +157,19 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+.card-price-bold {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  margin-left: 30px;
+}
+.card-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
 }
 .rating {
   margin-right: 26px;
@@ -172,6 +195,13 @@ body {
   overflow: hidden;
   white-space: nowrap;
   max-width: 150px;
+}
+.ingridients {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8c8c8c;
 }
 .price::after {
   content: "";
@@ -262,7 +292,7 @@ body {
   .container {
     max-width: 560px;
   }
-  .rating {
+  .card .rating {
     flex-basis: 100%;
   }
   .card-info {
@@ -332,6 +362,9 @@ body {
 }
 @media (max-width: 480px) {
   .button-text {
+    display: none;
+  }
+  .button-card-text {
     display: none;
   }
   .header .logo {
